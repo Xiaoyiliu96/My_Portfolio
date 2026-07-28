@@ -70,10 +70,9 @@ if (window.innerWidth > 768) {
           </ul>
         </div>
     </li>
-
-
-
     <li class="desktop-only"><a href="#contact_me">CONTACT&nbsp;ME</a></li>
+
+    <!-----------mobile-only----------->
 
     <li class="mobile-only"><a href="index.html" class="orange_nav">Home</a></li>
     <li class="mobile-only"><a href="index.html#main_bg" class="close-on-click">Projects</a></li>
@@ -82,6 +81,7 @@ if (window.innerWidth > 768) {
     <li class="mobile-only"><a href="cad_blueprints.html" target="_blank">Drill&nbsp;Jig&nbsp;Assembly</a></li>
     <li class="mobile-only"><a href="atypi19.html" target="_blank">ATYPI&nbsp;19&nbsp;Guide&nbsp;Design</a></li>
     <li class="mobile-only"><a href="tableau_project.html" target="_blank">Superstore&nbsp;Analysis</a></li>
+    <li class="mobile-only"><a href="#caffe_image-gallery">Coffee Brochure</a></li>
     <li class="mobile-only"><a href="#education" target="_blank">About&nbsp;Me</a></li>
     <li class="mobile-only"><a href="#contact_me" class="close-on-click" >Contact&nbsp;Me</a></li>
   </ul>
@@ -555,7 +555,35 @@ navigation efficiency.</div>
     <p class="video_project_text_desc">Our reliance on mobile technology in the digital era is undisputed. The short film <i>What if your phone dies?</i> offers a humorous exploration of this dependency, transforming a trivial technical inconvenience into a narrative on camaraderie. By utilizing precise editing and rhythmic pacing, the film juxtaposes desperation with resolution, illustrating how collective effort can resolve modern anxieties. It serves as a poignant reflection on human connection and irony, reminding viewers that support remains vital even in an increasingly automated society.</p>
     <p class="video_project_text_desc">SOFTEWARES: Adobe Premiere Pro</p>
   </div>
+
+<div class="video_project_text" id="caffe_image-gallery">
+    <p class="video_project_text_sub-title">Coffee Brochure Project</p>
+    <p class="video_project_text_main-title"><h1 id="main-title"> Describe the coffee brochure</h1></p>
+    <p class="video_project_text_desc">
+        <img src="images/project_images/00.webp" width="100%">
+        <img src="images/project_images/01.gif" width="100%">
+    <script>
+      const gallery = document.getElementById('caffe_image-gallery');
+
+      for (let i = 2; i <= 5; i++) {
+        const num = String(i).padStart(2, '0'); 
+        
+        const img = document.createElement('img');
+        img.src = `images/project_images/${num}.webp`;
+        img.style.width = '100%';
+        
+        gallery.appendChild(img);
+      }
+    </script>
+    </p>
+    <p class="video_project_text_desc">SOFTEWARES: Adobe Indesign & Adobe Photoshop</p>
   </div>
+
+
+
+
+  </div><!-------video_project----------->
+
  
 </div><!------video_project_bg-------->
 
@@ -686,6 +714,7 @@ navigation efficiency.</div>
           <li><a href="atypi19.html" target="_blank">ATYPI 19 Guide Design</a></li>
           <li><a href="tableau_project.html" target="_blank">Superstore Tableau Project</a></li>
           <li><a href="#video_project">What if your phone dies</a></li>
+          <li><a href="#caffe_image-gallery">Coffee Brochure Project</a></li>
         </ul>
 
       </div>
